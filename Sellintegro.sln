@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sellintegro.API", "Sellintegro.API\Sellintegro.API.csproj", "{9980B1D3-AD31-42EC-A33D-F62B3FB6245F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{095ADA1F-3C6E-46A6-9A2D-58EC2E0A97E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{D661A397-B09A-470E-AA34-4333C779536C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sellintegro.Contracts", "Sellintegro.Contracts\Sellintegro.Contracts.csproj", "{448FCD69-4527-4FFE-BD78-3C8BAE0609F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{3C510C2A-8D0E-4B56-AE94-C60A2382E5A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sellintegro.SnapshotGenerator.Job", "Sellintegro.SnapshotGenerator.Job\Sellintegro.SnapshotGenerator.Job.csproj", "{11DB959C-4B36-473A-8029-70C0DC024310}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{956ADDCE-E9FB-4458-A66A-59376AC50556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sellintegro.Domain", "Sellintegro.Domain\Sellintegro.Domain.csproj", "{943B5590-A197-48A4-98CA-2734FFAD1BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sellintegro.Application", "Sellintegro.Application\Sellintegro.Application.csproj", "{0D267B04-BD24-477B-BAB5-E7ACD242C957}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{475DE000-BEEE-4FB3-AD16-A276A10DEFCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sellintegro.Persistence", "Sellintegro.Persistence\Sellintegro.Persistence.csproj", "{7A362239-C71B-4616-8323-13CC0D7CE6C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9980B1D3-AD31-42EC-A33D-F62B3FB6245F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9980B1D3-AD31-42EC-A33D-F62B3FB6245F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9980B1D3-AD31-42EC-A33D-F62B3FB6245F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9980B1D3-AD31-42EC-A33D-F62B3FB6245F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{448FCD69-4527-4FFE-BD78-3C8BAE0609F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{448FCD69-4527-4FFE-BD78-3C8BAE0609F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{448FCD69-4527-4FFE-BD78-3C8BAE0609F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{448FCD69-4527-4FFE-BD78-3C8BAE0609F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11DB959C-4B36-473A-8029-70C0DC024310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11DB959C-4B36-473A-8029-70C0DC024310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11DB959C-4B36-473A-8029-70C0DC024310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11DB959C-4B36-473A-8029-70C0DC024310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{943B5590-A197-48A4-98CA-2734FFAD1BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{943B5590-A197-48A4-98CA-2734FFAD1BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{943B5590-A197-48A4-98CA-2734FFAD1BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{943B5590-A197-48A4-98CA-2734FFAD1BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D267B04-BD24-477B-BAB5-E7ACD242C957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D267B04-BD24-477B-BAB5-E7ACD242C957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D267B04-BD24-477B-BAB5-E7ACD242C957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D267B04-BD24-477B-BAB5-E7ACD242C957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A362239-C71B-4616-8323-13CC0D7CE6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A362239-C71B-4616-8323-13CC0D7CE6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A362239-C71B-4616-8323-13CC0D7CE6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A362239-C71B-4616-8323-13CC0D7CE6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9980B1D3-AD31-42EC-A33D-F62B3FB6245F} = {095ADA1F-3C6E-46A6-9A2D-58EC2E0A97E1}
+		{448FCD69-4527-4FFE-BD78-3C8BAE0609F5} = {D661A397-B09A-470E-AA34-4333C779536C}
+		{11DB959C-4B36-473A-8029-70C0DC024310} = {3C510C2A-8D0E-4B56-AE94-C60A2382E5A0}
+		{943B5590-A197-48A4-98CA-2734FFAD1BFD} = {956ADDCE-E9FB-4458-A66A-59376AC50556}
+		{0D267B04-BD24-477B-BAB5-E7ACD242C957} = {956ADDCE-E9FB-4458-A66A-59376AC50556}
+		{7A362239-C71B-4616-8323-13CC0D7CE6C6} = {475DE000-BEEE-4FB3-AD16-A276A10DEFCE}
+	EndGlobalSection
+EndGlobal
