@@ -1,5 +1,5 @@
-﻿
-using MediatR;
+﻿using MediatR;
+using Sellintegro.Contracts.Tasks;
 using Sellintegro.Contracts.Tasks.List;
 using Sellintegro.Domain.Entities.Tasks.Repositories;
 

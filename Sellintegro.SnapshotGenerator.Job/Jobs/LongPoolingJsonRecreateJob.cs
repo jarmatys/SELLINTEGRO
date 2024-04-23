@@ -1,5 +1,7 @@
 ﻿using System.Net;
+using System.Text.Json;
 using Quartz;
+using Sellintegro.Contracts.Tasks.Events;
 
 namespace Sellintegro.SnapshotGenerator.Job.Jobs;
 
@@ -20,7 +22,7 @@ internal class LongPoolingJsonRecreateJob : IJob
         try
         {
             // IMPROVEMENT: here we should get only new (or updated) tasks, not all - and append/update *.json file
-            var response = await Client.GetAsync(EndpointPath);
+            var response = await Client.GetAsync($"{EndpointPath}?lastEventId=TODO");
 
             switch (response)
             {
@@ -28,7 +30,12 @@ internal class LongPoolingJsonRecreateJob : IJob
                 {
                     var content = await response.Content.ReadAsStringAsync();
 
-                    await Files.SaveToFile(FilePath, content);
+                    var deserializedEvents = JsonSerializer.Deserialize<GetEventsResponse>(content,
+                        new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+                    var tasks = JsonSerializer.Serialize(deserializedEvents!.Events.Select(x => x.Data));
+
+                    await Files.SaveToFile(FilePath, tasks);
 
                     Console.WriteLine("Snapshot updated - new tasks added");
                     break;

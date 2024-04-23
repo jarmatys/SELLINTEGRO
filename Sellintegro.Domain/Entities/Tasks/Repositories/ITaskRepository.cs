@@ -4,5 +4,4 @@ public interface ITaskRepository
 {
     TaskEntity Create(TaskEntity taskEntity);
     IEnumerable<TaskEntity> GetList();
-    bool ListUpdated();
 }
